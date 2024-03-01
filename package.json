@@ -1,0 +1,41 @@
+{
+  "name": "pipedrive-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts build && nodemon index.js",
+    "dev:react": "react-scripts start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pipedrive/app-extensions-sdk": "github:pipedrive/app-extensions-sdk",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.1.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "pipedrive": "^22.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "latest",
+    "nodemon": "^3.1.0",
+    "web-vitals": "^3.5.2"
+  }
+}
