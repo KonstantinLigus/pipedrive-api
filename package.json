@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts build && nodemon index.js",
+    "start": "react-scripts build && cross-env NODE_ENV=development nodemon index.js",
     "dev:react": "react-scripts start"
   },
   "author": "",
