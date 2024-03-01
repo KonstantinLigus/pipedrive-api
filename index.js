@@ -42,6 +42,7 @@ app.get("/", async (req, res) => {
     // const deals = await api.getDeals();
 
     // res.send(deals);
+    console.log("befor send file");
     res.sendFile(path.join(path.join(__dirname, "./build"), "index.html"));
   } else {
     const authUrl = apiClient.buildAuthorizationUrl();
