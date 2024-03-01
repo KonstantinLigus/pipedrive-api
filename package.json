@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@pipedrive/app-extensions-sdk": "github:pipedrive/app-extensions-sdk",
+    "@pipedrive/app-extensions-sdk": "^0.10.0",
     "cookie-parser": "^1.4.6",
     "cookie-session": "^2.1.0",
     "cross-env": "^7.0.3",
