@@ -31,6 +31,7 @@ app.listen(PORT, () => {
 });
 
 app.get("/", async (req, res) => {
+  console.log("start of / route");
   if (
     req.session.accessToken !== null &&
     req.session.accessToken !== undefined
@@ -42,7 +43,6 @@ app.get("/", async (req, res) => {
     // const deals = await api.getDeals();
 
     // res.send(deals);
-    console.log("befor send file");
     res.sendFile(path.join(path.join(__dirname, "./build"), "index.html"));
   } else {
     const authUrl = apiClient.buildAuthorizationUrl();
