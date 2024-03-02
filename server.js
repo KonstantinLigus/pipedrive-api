@@ -30,7 +30,7 @@ app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });
 
-app.get("/", async (req, res) => {
+app.all("/", async (req, res) => {
   console.log("start of / route");
   if (
     req.session.accessToken !== null &&
